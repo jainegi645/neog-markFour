@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -18,12 +19,9 @@ function Home() {
                 along the way and flowing with the wind.
               </p>
               <div className=" mt-8">             
-                <a
-                  href="#"
-                  className=" uppercase py-2 px-4 rounded-lg bg-transparent border-2 cutomOnHover text-white  hover:text-white text-md"
-                >
-                  Projects
-                </a>
+               
+                <Link className=" uppercase py-2 px-4 rounded-lg bg-transparent border-2 cutomOnHover text-white  hover:text-white text-md" to="/projects">Projects</Link>
+
               </div>
             </div>
             <div className="hidden sm:block sm:w-1/3 lg:w-3/5 relative">
